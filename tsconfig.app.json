@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    /* Language and Environment Options */
+    "target": "ES2020",                         // Use modern JavaScript features
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],   // Include standard library definitions
+    "useDefineForClassFields": true,            // Align class field behavior with JavaScript
+  
+    /* Module Resolution */
+    "module": "ESNext",                         // Support for ESNext modules
+    "moduleResolution": "bundler",             // Resolve modules with modern bundlers
+    "allowImportingTsExtensions": true,        // Allow .ts/.tsx extensions in imports
+    "isolatedModules": true,                   // Emit each file separately
+    "moduleDetection": "force",                // Enforce module syntax usage
+    "baseUrl": "./",                           // Base directory for module resolution
+
+    /* JSX Settings */
+    "jsx": "react-jsx",                        // Use new JSX runtime (React 17+)
+
+    /* Linting and Strictness */
+    "strict": true,                            // Enable all strict type-checking options
+    "noUnusedLocals": true,                    // Error on unused variables
+    "noUnusedParameters": true,                // Error on unused function parameters
+    "noFallthroughCasesInSwitch": true,        // Prevent accidental case fall-through
+
+    /* Interoperability and JSON Handling */
+    "esModuleInterop": true,                   // Interop with CommonJS modules
+    "resolveJsonModule": true,                 // Allow importing JSON files
+    "allowJs": true,                           // Support JavaScript files in the project
+    "skipLibCheck": true,                      // Skip type-checking library files
+
+    /* Paths and Aliases (optional) */
+    "paths": {
+      "@components/*": ["src/components/*"],   // Alias for components
+      "@utils/*": ["src/utils/*"]              // Alias for utilities
+    },
+
+    /* Output Settings */
+    "noEmit": true                             // Prevent emitting compiled JavaScript
+  },
+  "include": ["src"],                          // Include all files in the `src` folder
+  "exclude": ["node_modules", "dist"]          // Exclude common build artifacts
+}
